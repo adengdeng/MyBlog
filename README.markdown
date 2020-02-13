@@ -1,4 +1,3 @@
-# 
- _A Pen created at CodePen.io. Original URL: [https://codepen.io/Aweiwei/pen/oRejKE](https://codepen.io/Aweiwei/pen/oRejKE).
+# _A Pen created at CodePen.io. Original URL: [https://codepen.io/Aweiwei/pen/oRejKE](https://codepen.io/Aweiwei/pen/oRejKE).
 
  
