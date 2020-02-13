@@ -1,0 +1,769 @@
+//顏色定義
+$color_blue: #1c2938
+$color_light_blue: #3a516b
+$color_red: #cd3f3e
+$color_light_red: #3a516b
+$color_pink: #ff9c91
+$color_light_pink: #ffd3cf
+$color_white: #f4f6f6
+$color_light_white: #ffffff
+$color_grey: #c9c9c9
+// ---------------------------
+*
+  font-family: 'Quicksand','微軟正黑體'
+  // border: solid 1px black
+h1
+  font-size: 40px
+  letter-spacing: 0.5px
+h3
+  font-size: 25px
+  letter-spacing: 0.5px
+  
+
+// ---------------------------
+// debug
+nav
+  // display: none
+header,section
+  // display: none
+section#section_contact
+  display: block
+
+// ---------------------------
+html,body
+  overflow-x: hidden
+  font-size: 16px
+  min-width: 576px
+
+
+// ---------------------------
+@mixin ab_center
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%,-50%)
+
+@mixin size($w,$h)
+  width: $w
+  height: $h
+  
+// ---------------------------
+
+
+@keyframes change_bg
+    0%
+      background-image: url(https://upload.cc/i1/2019/09/13/tEAOfs.png)
+    24%
+      background-image: url(https://upload.cc/i1/2019/09/13/tEAOfs.png)
+    25%
+      background-image: url(https://upload.cc/i1/2019/09/13/wzmY48.png)
+    49%
+      background-image: url(https://upload.cc/i1/2019/09/13/wzmY48.png)
+    50%
+      background-image: url(https://upload.cc/i1/2019/09/13/TDgWq4.png)
+    74%
+      background-image: url(https://upload.cc/i1/2019/09/13/TDgWq4.png)
+    75%
+      background-image: url(https://upload.cc/i1/2019/09/13/RHx28u.png)
+    99%
+      background-image: url(https://upload.cc/i1/2019/09/13/RHx28u.png)
+    100%
+      background-image: url(https://upload.cc/i1/2019/09/13/tEAOfs.png)
+
+// ---------------------------
+.logo
+  .brand_text
+    font-weight: bold 
+    margin-left: -10px
+    
+nav.navbar
+  transition: 0.5s
+  
+
+#logo_text
+  color: $color_blue
+
+
+    
+nav.navbar.at_top
+  background-color: rgba(244,246,246,0.3)
+  
+
+nav.navbar
+  border-bottom: 1px solid transparent
+
+// ---------------------------
+header
+  
+    
+  #mouse_icon
+    position: absolute
+    width: 60px
+    
+  position: relative
+  animation: change_bg 10s infinite
+  animation-timing-function: linear
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+  text-align: center
+  min-height: 100px
+  top: 50px
+  // height: 706px
+  .hotdog
+    // background-color: green
+    padding: 350px 100px
+    margin-left: auto
+    margin-right: auto
+    .img_hotdog
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: 60%
+      min-width: 100px
+      max-width: 400px
+    img
+      width: 100%
+      
+    .img_hotdog#left
+      animation: left 10s infinite
+      animation-timing-function: linear
+      // background-color: yellow
+      .bar1
+        position: absolute
+        width: 5px
+        height: 91px
+        background-color: $color_white
+        bottom: 0px
+        left: -96px
+      .bar2
+        position: absolute
+        width: 85px
+        height: 5px
+        background-color: $color_white
+        top: 0px
+        right: -125px
+      .left
+        z-index: 0
+      .text_hot1
+        position: absolute
+        width: 80%
+        max-width: 300px
+        right: 200px
+        top: 0
+        z-index: -1
+      .text_dog1
+        position: absolute
+        width: 80%
+        max-width: 300px
+        left: 230px
+        bottom: 0px
+        z-index: -1
+
+    .img_hotdog#middle
+      width: 22%
+      max-width: 230px
+      min-width: 200px
+      opacity: 0
+      animation: middle 10s infinite
+      animation-timing-function: linear
+      .bar3
+        position: absolute
+        width: 75px
+        height: 5px
+        background-color: $color_light_blue
+        top: 90px
+        left: -276px
+      .bar4
+        position: absolute
+        width: 70px
+        height: 5px
+        background-color: $color_light_blue
+        top: 190px
+        right: -270px
+      .middle
+        z-index: 0
+      .text_hot2
+        width: 110%
+        position: absolute
+        max-width: 500px
+        right: 255px
+        top: 110px
+        z-index: -1
+      .text_dog2
+        width: 110%
+        position: absolute
+        top: 90px
+        max-width: 500px
+        left: 255px
+        z-index: -1
+        
+    .img_hotdog#side
+      max-width: 500px
+      min-width: 160px
+      opacity: 0
+      animation: side 10s infinite
+      animation-timing-function: linear
+      .text_hot4
+        position: absolute
+        max-width: 300px
+        top: -140px
+        left: 50%
+        transform: translateX(-50%)
+      .text_dog4
+        position: absolute
+        max-width: 340px
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -130px
+        
+    .img_hotdog#right
+      opacity: 0
+      animation: right 10s infinite
+      animation-timing-function: linear
+      .right
+        z-index: 0
+      .text_hot3
+        position: absolute
+        transform: rotate(90deg)
+        width: 80%
+        max-width: 300px
+        left: -230px
+        top: 100px
+        z-index: -1
+      .text_dog3
+        position: absolute
+        width: 80%
+        max-width: 300px
+        left: 220px
+        top: 0px
+        z-index: -1
+      .bar5
+        position: absolute
+        width: 5px
+        height: 80px
+        background-color: $color_pink
+        bottom: -10px
+        right: -110px
+
+@keyframes left
+  1%
+    opacity: 1
+  24%
+    opacity: 1
+  25%
+    opacity: 0
+  100%
+    opacity: 0
+  
+@keyframes middle
+  0%
+    opacity: 0
+  24%
+    opacity: 0
+  25%
+    opacity: 1
+  49%
+    opacity: 1
+  50%
+    opacity: 0
+  100%
+    opacity: 0
+      
+@keyframes right
+  0%
+    opacity: 0
+  49%
+    opacity: 0
+  50%
+    opacity: 1
+  74%
+    opacity: 1
+  75%
+    opacity: 0
+  100%
+    opacity: 0    
+      
+
+@keyframes side
+  0%
+    opacity: 0
+  74%
+    opacity: 0
+  75%
+    opacity: 1
+  100%
+    opacity: 1    
+    
+
+.explore
+  +ab_center
+  font-size: 18px
+  top: 90%
+  color: $color_white
+  letter-spacing: 2px
+  opacity: 0
+  transition: 0.5s
+  animation: explore 10s infinite
+  animation-timing-function: linear
+  text-decoration: none
+  &:after
+    display: block
+    content: "V"
+    transform: scaleX(1.2) scaleY(0.5)
+  &.at_top
+    opacity: 1
+    
+@keyframes explore
+  0%
+    color: $color_white
+    text-decoration: none
+  24%
+    color: $color_white
+    text-decoration: none
+  25%
+    color: $color_light_blue
+    text-decoration: none
+  49%
+    color: $color_light_blue
+    text-decoration: none
+  50%
+    color: $color_pink
+    text-decoration: none
+  74%
+    color: $color_pink
+    text-decoration: none
+  75%
+    color: $color_white
+    text-decoration: none
+  100%
+    color: $color_white
+    text-decoration: none
+// ---------------------------
+  
+
+section#section_about
+  background-color: $color_white
+  margin-top: 50px
+  
+  .about
+    margin-top: 140px
+    margin-left: 50px
+    margin-right: 50px
+    margin-bottom: 50px
+    .order_now_btn
+      position: absolute
+      right: 70px
+      background-color: $color_pink
+      color: $color_white
+      font-weight: bolder
+      letter-spacing: 2px
+      border: 0px
+      
+    .intro1,.intro2
+      padding: 10px
+      letter-spacing: 0.5px
+      
+    .intro1
+      font-weight: bold
+      line-height: 55px
+      
+    .intro2
+      line-height: 35px
+      color: $color_pink
+      
+  
+  .img_hotdog_detail
+    transition-duration: 1s
+    margin-left: auto
+    margin-right: auto
+    margin-top: 140px
+    margin-bottom: 130px
+    height: 330px
+    width: 405px
+    
+    
+    .arrow
+      position: absolute
+      width: 50px
+      transform: translateX(60px) translateY(50px) rotate(20deg)
+      transition-delay: 0.7s
+    .hotdog_title_text
+      display: inline-block
+      font-size: 25px
+      font-weight: bold
+      position: absolute
+      transform: translateX(-20px)
+      color: $color_blue
+      transition-delay: 0.7s
+    .hotdogbun_text
+      position: absolute
+      transform: translateY(645px) rotate(-32deg)
+      color: $color_blue
+      
+    .pickle_text
+      position: absolute
+      transform: translateY(450px) rotate(-32deg)
+      color: $color_blue
+    .hotdog_text
+      position: absolute
+      transform: translateY(247px) rotate(-32deg)
+      color: $color_blue
+    .sauce_text
+      position: absolute
+      transform: translateY(115px) rotate(-30deg)
+      color: $color_blue
+    .hovertext
+      opacity: 0
+      
+      
+    .hotdogbun1
+      transition-duration: 1s
+      transform: translateY(50px)
+      width: 400px
+      position: absolute
+      filter: drop-shadow( 0 6px 6px rgba(0,0,0,0.4))
+    .pickle2
+      transition-duration: 1s
+      transform: translateX(23px) translateY(55px)
+      width: 330px
+      position: absolute
+      // display: none
+    .hotdog3
+      transition-duration: 1s
+      width: 400px
+      transform: translateX(-10px) translateY(35px)
+      position: absolute
+      filter: drop-shadow( 0 3px 10px rgba(0,0,0,0.23))
+      // display: none
+    .sauce4
+      transition-duration: 1s
+      width: 340px
+      transform: translateX(20px) translateY(47px)
+      position: absolute
+      // display: none
+    .pickle5
+      width: 290px
+      transform: translateX(68px) translateY(66px)
+      position: absolute
+      transition-duration: 1s
+      // display: none
+    .hotdogbun6
+      width: 326px
+      transform: translateX(74px) translateY(77px)
+      position: absolute
+      transition-duration: 1s
+      
+      // display: none
+      
+    &:hover
+      
+      height: 700px
+      position: relative
+      margin-top: 50px
+      margin-bottom: 260px
+      .aboutintro
+        margin-top: 300px
+      .hotdogbun1
+        transform: translateY(580px)
+        transition-duration: 1s
+        filter: drop-shadow( 0 6px 6px rgba(0,0,0,0.4))
+      .hotdogbun6
+        opacity: 0
+        transform: translateX(74px) translateY(620px) 
+        transition-duration: 1s
+      .hotdog3
+        transform: translateX(-10px) translateY(130px)
+        transition-duration: 1s
+        filter: drop-shadow( 0 6px 6px rgba(0,0,0,0.4))
+      .pickle2
+        transform: translateX(23px) translateY(360px)
+        transition-duration: 1s
+        filter: drop-shadow( 0 6px 6px rgba(0,0,0,0.4))
+      .pickle5
+        transition-duration: 1s
+        transform: translateX(68px) translateY(371px)
+      .sauce4
+        transform: translateX(20px) translateY(20px)
+        transition-duration: 1s
+        filter: drop-shadow( 0 4px 8px rgba(0,0,0,0.2))
+      .hovertext
+        opacity: 1
+        transition-duration: 0.3s
+        transition-delay: 0.8s
+      .hotdog_title_text,.arrow
+        opacity: 0
+        transition-delay: 0s
+      
+// ---------------------------
+@mixin flavor_title
+  text-align: center
+  font-weight: bold
+  
+@mixin intro
+  background-color: $color_light_blue
+  padding: 8px
+  padding-left: 12px
+  padding-right: 12px
+  border-radius: 3px
+  box-shadow: 0 6px 6px rgba(0,0,0,0.23)
+  
+  
+section#section_flavor   
+  
+    
+  background-image: url(https://upload.cc/i1/2019/09/15/9tW1Dp.png)
+  background-size: cover
+  height: 700px
+  overflow: hidden
+  transition-duration: 1s
+  .container
+    display: flex
+    justify-content: space-around
+    .title
+      position: absolute
+      display: block
+      margin-top: 150px
+      min-width: 560px
+      .flavor_title1
+        +flavor_title
+        color: $color_blue
+      .flavor_title2
+        +flavor_title
+        color: $color_pink
+        font-weight: normal
+        &:after
+          display: block
+          content: "V"
+          margin-top: 10px
+          transform: scaleX(1.2) scaleY(0.5)
+        
+        
+        
+    .icon
+      margin-top: 480px
+      display: flex
+      justify-content: space-around
+      cursor: pointer
+      
+      img
+        width: 50%
+        height: 100%
+        min-width: 80px
+        
+        // height: 317px
+        transition-duration: 0.5s
+        
+        
+      .intro
+        position: absolute
+        color: $color_white
+        display: none
+        transition-duration: 0.5s
+        transition-delay: 0.3s
+        
+      .original
+        transform: translateY(-160px) translateX(46%)
+        .ori
+          +intro
+          display: inline-block
+          font-weight: bold
+        .ori_about
+          +intro
+          margin-top: 1px
+          
+      .polish_hotdog
+        transform: translateY(-160px) translateX(46%)
+        .pol
+          +intro
+          display: inline-block
+          font-weight: bold
+        .pol_about
+          +intro
+          margin-top: 1px
+          text-align: center
+          
+      .german_hotdog
+        transform: translateY(-140px) translateX(14%)
+        .ger
+          display: inline-block
+          text-align: center
+          width: 175px
+          margin-right: 65px
+          margin-top: auto
+          margin-bottom: auto
+          font-weight: bold
+          +intro
+        .ger_about 
+          text-align: center
+          margin-top: auto
+          margin-bottom: auto
+          +intro
+          
+      .italian_hotdog
+        transform: translateY(-160px) translateX(-52%)
+        .ita
+          display: table
+          margin-left: auto
+          text-align: center
+          right: 0px
+          +intro
+          font-weight: bold
+        .ita_about
+          +intro
+          margin-top: 1px
+          text-align: center
+          
+      .maxican_hotdog
+        transform: translateY(-160px) translateX(-52%)
+        .max
+          display: table
+          margin-left: auto
+          text-align: center
+          right: 0px
+          font-weight: bold
+          +intro
+        .max_about
+          +intro
+          margin-top: 1px
+          text-align: center
+          
+          
+    .icon.original
+      &:hover
+        .original_img
+          transform: translateY(-120px) scale(1.6)
+          transition-duration: 0.5s
+        .intro
+          display: block
+    .icon.polish
+      &:hover
+        .polish_img
+          transform: translateY(-120px) scale(1.6)
+          transition-duration: 0.5s
+        .intro
+          display: block
+    .icon.german
+      &:hover
+        .german_img
+            transform: translateY(-120px) scale(1.6)
+            transition-duration: 0.5s
+        .intro
+          opacity: 1
+          display: flex
+          .ger
+            +intro
+    .icon.italian
+      &:hover
+        .italian_img
+          transform: translateY(-120px) scale(1.6)
+          transition-duration: 0.5s
+        .intro
+          display: table
+    .icon.maxican
+      &:hover
+        .maxican_img
+          &:hover
+            transform: translateY(-120px) scale(1.6)
+            transition-duration: 0.5s
+        .intro
+          display: table
+    
+
+  // ---------------------------  
+  
+section#section_contact
+  position: relative
+  background-color: $color_blue
+  overflow: hidden
+  .bgi
+    height: 100%
+    position: absolute
+    
+    // display: none
+  input,textarea
+    display: block
+    border: none
+  textarea
+    resize: none
+  .container
+    
+    .contact
+      padding: 60px
+      padding-top: 130px
+      padding-bottom: 80px
+     
+      .contact_detail
+        input
+          width: 100%
+          
+      h1
+        color: $color_pink
+        font-weight: bold
+        letter-spacing: 2px
+      h3
+        color: $color-white
+        letter-spacing: 1px
+        line-height: 35px
+
+      label
+        color: $color-white
+        font-weight: 400
+        letter-spacing: 1px
+      .name
+        display: inline-block
+        margin-top: 20px
+      .name_input
+        margin-bottom: -5px
+      .email
+        display: inline-block
+      .content
+        margin-top: 10px
+      h4
+        color: $color-white
+        font-weight: 300
+        letter-spacing: 1px
+        margin-top: 30px
+      .fab
+        cursor: pointer
+        color: $color_white
+        font-size: 20px
+        margin-right: 15px
+        margin-top: -5px
+        text-decoration: none
+      textarea
+        height: 140px
+        width: 100%
+  .hotdogs
+    width: 50%
+    position: absolute
+    right: 0px
+    bottom: 0px
+    min-width: 300px
+    
+    
+// ---------------------------
+footer
+  position: relative
+  background-color: $color_white
+  text-align: center
+  padding: 50px
+  .logo
+    display: flex
+    position: absolute
+    left: 50%
+    top: 62%
+    transform: translate(-50%,-50%)
+    font-size: 14px
+    font-weight: bold
+    
+    .rights
+      display: flex
+      align-items: center
+      
+    .icon
+      width: 40px
+      height: 100%
+      margin-right: 10px
+      
