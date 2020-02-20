@@ -5,6 +5,7 @@ function send() {
 	let name = document.querySelector('#nameValue').value;
 	let phone = document.querySelector('#phoneValue').value;
 	let demand = document.querySelector('#demandValue').value;
+	let mydate2 = dt.getFullYear();
 
 	$.ajax({
 		url: "https://script.google.com/macros/s/AKfycbyLPqsK6lueHYQHC0A0YjSEu_OBVnygdVSLe9yBFXBeyX6u8smI/exec",
@@ -12,7 +13,7 @@ function send() {
 			"name": name,
 			"phone": phone,
 			"demand": demand,
-			"Date":mydate
+			"Date": mydate2
 		},
 		success: function(response) {
 			if(response == "000"){
