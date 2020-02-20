@@ -29,7 +29,7 @@ function send() {
 sendButton.addEventListener('click', send);
 
 
-var loadingTimeout = window.setTimeout(function() {
-  alert('網路不穩定，請稍後再試');
-}, 10000); // 10000ms = 10sec
+// var loadingTimeout = window.setTimeout(function() {
+//   alert('網路不穩定，請稍後再試');
+// }, 10000); // 10000ms = 10sec
 
