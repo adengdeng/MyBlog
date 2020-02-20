@@ -17,7 +17,9 @@ function send() {
 		},
 		success: function(response) {
 			if(response == "000"){
-			alert("簽到成功");
+				alert("簽到成功");
+			}else{
+				alert("簽到失敗");
 			}
 		},
 		error: function(data) {
