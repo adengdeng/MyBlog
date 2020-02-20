@@ -5,7 +5,7 @@ function send() {
   let phone = document.querySelector('#phoneValue').value;
   let demand = document.querySelector('#demandValue').value;
   $.ajax({
-    url: "填入google sheet api url",
+    url: "https://script.google.com/macros/s/AKfycbyLPqsK6lueHYQHC0A0YjSEu_OBVnygdVSLe9yBFXBeyX6u8smI/exec",
     data: {
         "name": name,
         "phone": phone,
