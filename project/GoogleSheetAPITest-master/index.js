@@ -21,7 +21,7 @@ function send() {
 			}
 		},
 		error: function(data) {
-			alert('簽到失敗'); 
+			alert("簽到失敗");
 		}
 		});
 };
