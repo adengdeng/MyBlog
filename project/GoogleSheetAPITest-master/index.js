@@ -52,6 +52,8 @@ closepopupbtn.addEventListener('click', closepopup);
 function popupview() {
 	// alert("跳跳跳");
 	$("#confirmsend").show();
+	// $("#closepopupbtn").show();
+	// $("#p22").show();
 }
 
 
