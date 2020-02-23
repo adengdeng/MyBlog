@@ -1,12 +1,12 @@
 @charset "UTF-8";
 @font-face {
   font-family: "jf-jinxuan-medium";
-  src: url(fontfamily/jf-jinxuan-medium.otf);
+  src: local("jf-jinxuan-medium"),
+       url("fonts/jf-jinxuan-medium.otf"), 
 }
 body{
   font-family: "jf-jinxuan-medium";
-  src: url(fontfamily/jf-jinxuan-medium.otf);
-
+  src: url("fonts/jf-jinxuan-medium.otf");
 }
 
 h1 {
