@@ -16,3 +16,7 @@ button{
   background-color: white;
   border: none;
 }
+
+.background-image{
+	background-image: url("./www/img/background/marble.jpg");
+}
