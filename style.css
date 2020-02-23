@@ -1,6 +1,6 @@
 @charset "UTF-8";
-* {
-  font-family: "jf-jinxuan-medium", "Quicksand", "微軟正黑體";
+@font-face {
+  font-family: "jf 金萱鮮摘", "Quicksand", "微軟正黑體";
   src: url(fontfamily/jf-jinxuan-medium.otf);
 }
 
