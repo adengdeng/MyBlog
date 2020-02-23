@@ -1,4 +1,4 @@
-let sendButton = document.querySelector('button');
+let sendbtn = document.querySelector('button');
 
 function send() {
 	var mydate = new Date();
@@ -26,10 +26,19 @@ function send() {
 			alert("簽到失敗");
 		}
 		});
-};
+}
 
-sendButton.addEventListener('click', send);
+sendbtn.addEventListener('click', send);
 
+
+
+popupbtn.addEventListener('click', popupview);
+
+
+// 彈跳視窗測試
+function popupview() {
+	alert("跳跳跳");
+}
 
 // var loadingTimeout = window.setTimeout(function() {
 //   alert('網路不穩定，請稍後再試');
