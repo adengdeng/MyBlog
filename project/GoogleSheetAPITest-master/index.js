@@ -1,5 +1,17 @@
 let sendbtn = document.querySelector('button');
 
+$(document).ready(function(){
+	// $("#confirmsend").click(function(){
+	// 	$("p").hide();
+	// });
+	
+	// $("#confirmsend").click(function(){
+	// 	$("p").show();
+	// });
+
+	$("#confirmsend").hide();
+});
+
 function send() {
 	var mydate = new Date();
 	let name = document.querySelector('#nameValue').value;
@@ -34,11 +46,23 @@ sendbtn.addEventListener('click', send);
 
 popupbtn.addEventListener('click', popupview);
 
+closepopupbtn.addEventListener('click', closepopup);
 
 // 彈跳視窗測試
 function popupview() {
-	alert("跳跳跳");
+	// alert("跳跳跳");
+	$("#confirmsend").show();
 }
+
+
+
+function closepopup() {
+	
+	$("#confirmsend").hide();
+
+}
+
+
 
 // var loadingTimeout = window.setTimeout(function() {
 //   alert('網路不穩定，請稍後再試');
