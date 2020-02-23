@@ -57,8 +57,9 @@ function popupview() {
 
 
 function closepopup() {
-	
 	$("#confirmsend").hide();
+	$("#closepopupbtn").hide();
+	$("#p22").hide();
 
 }
 
